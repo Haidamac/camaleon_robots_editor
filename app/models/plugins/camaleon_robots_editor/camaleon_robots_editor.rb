@@ -3,7 +3,7 @@ class Plugins::CamaleonRobotsEditor::CamaleonRobotsEditor
 
   def initialize
     @file_path = Rails.root.join('public/robots.txt')
-    File.new(@file_path, "w+") unless File.exist? @file_path
+    File.new(@file_path) unless File.exist? @file_path
   end
 
   def read
