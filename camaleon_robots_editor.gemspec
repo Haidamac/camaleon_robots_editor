@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = CamaleonRobotsEditor::VERSION
   s.authors     = ["superchel"]
   s.email       = ["for.oleg.mozolev@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = "https://siteon.com.ua"
   s.summary     = ": Summary of CamaleonRobotsEditor."
-  s.description = ": Description of CamaleonRobotsEditor."
+  s.description = "Simply robots.txt editor."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
