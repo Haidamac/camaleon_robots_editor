@@ -1,0 +1,17 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4>Robots Settings</h4>
+    </div>
+    <div class="panel-body">
+        <%= form_tag(url_for(action: :save_settings), class: 'validate') do %>
+          <div class="form-group">
+            <label> Robots Content </label>
+            <%= text_area_tag 'robots_content', @robots_text, class: 'form-control required', style: "height: 500px;"  %>
+          </div>
+            <%= render partial: "camaleon_cms/admin/settings/custom_fields/render", locals: {record: @plugin, field_groups: @plugin.get_field_groups} %>
+            <div class="form-group text-right">
+                <%= submit_tag 'Save Settings', class: 'btn btn-primary' %>
+            </div>
+        <% end %>
+    </div>
+</div>
